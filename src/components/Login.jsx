@@ -17,7 +17,11 @@ function Login() {
       const session = await authService.login(data);
       if (session) {
         const userData = await authService.getCurrentUser();
+<<<<<<< HEAD
         if (userData) dispatch(authLogin({ userData }));
+=======
+        if (userData) dispatch(authLogin({userData}));
+>>>>>>> cba93fa114fddd17369af3215104a4a2b6a2bdab
         navigate("/");
       }
     } catch (error) {

@@ -13,8 +13,21 @@ function Home() {
   }, []);
   if (posts.length === 0) {
     return (
+<<<<<<< HEAD
       <div className="mx-auto w-[200px] my-10 p-10">
         <Loader />
+=======
+      <div className="w-full py-8 mt-4 text-center">
+        <Container>
+          <div className="flex flex-wrap">
+            <div className="p-2 w-full">
+              <h1 className="text-2xl font-bold hover:text-gray-500">
+                Post is not available. Please add one!
+              </h1>
+            </div>
+          </div>
+        </Container>
+>>>>>>> cba93fa114fddd17369af3215104a4a2b6a2bdab
       </div>
     );
   }
