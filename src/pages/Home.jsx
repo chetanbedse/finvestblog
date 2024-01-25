@@ -18,7 +18,7 @@ function Home() {
           <div className="flex flex-wrap">
             <div className="p-2 w-full">
               <h1 className="text-2xl font-bold hover:text-gray-500">
-                Login to read posts
+                Post is not available. Please add one!
               </h1>
             </div>
           </div>
