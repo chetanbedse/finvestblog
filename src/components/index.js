@@ -12,6 +12,7 @@ import AuthLayout from "./AuthLayout";
 import Select from "./Select";
 import Input from "./Input";
 import Button from "./Button";
+import Loader from "./Loader";
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   Select,
   Input,
   Button,
+  Loader,
 };

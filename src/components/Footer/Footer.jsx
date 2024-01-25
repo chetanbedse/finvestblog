@@ -136,7 +136,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-5 mt-10 border border-t-2 border-[#e7ba48]">
+      <div className="py-5 mt-10 border-t-2 border-[#e7ba48]">
         <p className="text-md text-[#b85760] text-center p-0 font-semibold">
           &copy; Copyright 2024 FINVEST | All Rights Reserved.
         </p>

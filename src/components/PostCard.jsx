@@ -2,7 +2,6 @@ import React from "react";
 import appwriteService from "../appwrite/config";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
-import Button from "./Button";
 
 function PostCard({ $id, title, featuredImage, content }) {
   const mystyle = {

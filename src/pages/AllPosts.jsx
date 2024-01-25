@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, PostCard } from "../components";
+import { Container, Loader, PostCard } from "../components";
 import appwriteService from "../appwrite/config";
 
 function AllPosts() {
@@ -11,7 +11,13 @@ function AllPosts() {
       }
     });
   }, []);
-
+  if (posts.length === 0) {
+    return (
+      <div className="mx-auto w-[200px] my-10 p-10">
+        <Loader />
+      </div>
+    );
+  }
   return (
     <div className="w-full">
       <div className="bg-[#b75660] py-12">

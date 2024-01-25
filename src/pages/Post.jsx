@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import appwriteService from "../appwrite/config";
-import { Button, Container } from "../components";
+import { Button, Container, Loader } from "../components";
 import parse from "html-react-parser";
 import { useSelector } from "react-redux";
 
@@ -12,7 +12,7 @@ export default function Post() {
 
   const userData = useSelector((state) => state.auth.userData);
 
-  const isAuthor = post && userData ? post.userId === userData.$id : false;
+  const isAuthor = post && (userData ? post.userId === userData.$id : false);
 
   useEffect(() => {
     if (slug) {
@@ -72,5 +72,9 @@ export default function Post() {
         </div>
       </Container>
     </div>
-  ) : null;
+  ) : (
+    <div className="mx-auto w-[200px] my-10 p-10">
+      <Loader />
+    </div>
+  );
 }
