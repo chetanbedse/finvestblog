@@ -38,7 +38,7 @@ export default function Post() {
         <h1 className="text-center text-white font-semibold text-4xl">Blogs</h1>
       </div>
       <Container>
-        <div className="py-8 mx-20 flex flex-wrap">
+        <div className="py-8 mx-auto flex flex-wrap">
           <div className="w-2/3 mb-4 border rounded-xl shadow p-2">
             <img
               src={appwriteService.getFilePreview(post.featuredImage)}
@@ -47,23 +47,25 @@ export default function Post() {
             />
           </div>
           {isAuthor && (
-            <div className="w-1/3 p-2 text-center">
+            <div className="w-1/3  text-center">
               <Link to={`/edit-post/${post.$id}`}>
-                <Button bgColor="bg-green-500" className="w-1/3 mx-2">
+                <Button
+                  bgColor="bg-green-500"
+                  className="w-full lg:w-1/3 mx-2 mb-1"
+                >
                   Edit
                 </Button>
               </Link>
               <Button
                 bgColor="bg-red-500"
-                className="w-1/3 mx-2"
+                className="w-full lg:w-1/3 mx-2 mt-1"
                 onClick={deletePost}
               >
                 Delete
               </Button>
             </div>
           )}
-
-          <div className="w-2/3 mb-6 px-2">
+          <div className="w-full lg:w-2/3 mb-6 px-2">
             <h1 className="text-2xl font-bold text-[#b8565f]">{post.title}</h1>
             <div className="browser-css text-justify">
               {parse(post.content)}

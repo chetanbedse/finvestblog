@@ -18,10 +18,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-p,
 h1,
-h2 {
-  padding-bottom: 15px;
+h2,
+table {
+  margin: 10px 0 !important;
 }
 
 ol {
