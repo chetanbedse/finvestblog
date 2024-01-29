@@ -20,7 +20,7 @@ function AllPosts() {
   }
   return (
     <div className="w-full">
-      <div className="bg-[#b75660] py-12">
+      <div className="bg-[#b75660] py-20">
         <h1 className="text-center text-white font-semibold text-4xl">
           All Blogs
         </h1>

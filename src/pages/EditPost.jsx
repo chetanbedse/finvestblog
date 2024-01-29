@@ -20,7 +20,7 @@ function EditPost() {
   }, [slug, navigate]);
   return post ? (
     <div>
-      <div className="bg-[#b75660] py-12">
+      <div className="bg-[#b75660] py-20">
         <h1 className="text-center text-white font-semibold text-4xl">
           Edit Post
         </h1>

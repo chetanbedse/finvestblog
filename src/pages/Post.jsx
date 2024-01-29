@@ -34,8 +34,8 @@ export default function Post() {
 
   return post ? (
     <div>
-      <div className="bg-[#b75660] py-12">
-        <h1 className="text-center text-white font-semibold text-4xl">Blogs</h1>
+      <div className="bg-[#b75660] py-20">
+        <h1 className="text-center text-white font-semibold text-4xl">Blog</h1>
       </div>
       <Container>
         <div className="py-8 mx-auto flex flex-wrap">
